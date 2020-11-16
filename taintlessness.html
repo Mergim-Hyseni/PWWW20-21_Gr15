@@ -4,148 +4,268 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taintlessness</title>
-     
+
     <style>
-        #pershkrimi,#quote{
-          text-align: center;
-          margin-bottom: 15px;
+        #pershkrimi, #quote {
+            text-align: center;
+            margin-bottom: 15px;
         }
-        .ngjyra1{
-          color:rgb(148, 121, 98)
-         
+
+        .ngjyra1 {
+            color: rgb(148, 121, 98)
+
         }
         
 
-        #pershkrimi{
-          font-size: 50px;
+        #pershkrimi {
+            font-size: 50px;
         }
-        #quote{
-          font-size:20px;
-          margin-top: 10px;
-          
-        }
-        .fonti1{
-          font-size:25px ;
+
+        #quote {
+            font-size: 20px;
+            margin-top: 10px;
 
         }
-        .fonti2{
-          font-size: 17px;
+
+        .fonti1 {
+            font-size: 25px;
+
+
         }
-        #tabela{
-          width: 100%;
+
+        .fonti2 {
+            font-size: 17px;
         }
-        td{
-           width: 23%;
+
+        #tabela {
+            width: 100%;
+        }
+
+        td {
+            width: 23%;
             padding-right: 30px;
-             }
-        .butonat1{
-          color: white;
-          background-color: 	rgb(229, 89, 61);
-          padding: 5px;
-          border-radius: 10px;
-          font-size: 20px;
-          border-color:rgb(148, 121, 98)
-;
-        }     
+        }
 
+        .butonat1 {
+            color: white;
+            background-color: rgb(229, 89, 61);
+            padding: 5px;
+            border-radius: 10px;
+            font-size: 20px;
+            border-color: rgb(148, 121, 98);
+        }
+        .email {
+            color: white;
+            background-color: gainsboro;
+            padding: 5px;
+            border-radius: 10px;
+            font-size: 20px;
+            border-color: rgb(148, 121, 98);
+        }
+        .submit-butoni {
+            color: white;
+            background-color: rgb(229, 89, 61);
+            padding: 5px;
+            border-radius: 10px;
+            font-size: 20px;
+            border-color: rgb(148, 121, 98);
+        }
+        .list1 {
+            color: coral;
+            list-style: none;
+            padding-left: 0px;
+
+        }
+        .l1::before{
+
+            content: "\00BB";
+        }
+        .link1{text-decoration: none;color: coral}
 
     </style>
 
 
 </head>
 <body>
-    <!-- Grinesa-->
-    <div id="navigation">
+<!-- Grinesa-->
+<div id="navigation">
+
+
+</div>
+
+<div id="homepage">
+    <div id="fotoja_pershkrimi">
 
 
     </div>
-
-  <div id="homepage">
-     <div id="fotoja_pershkrimi">
-
-
-     </div>
     <!-- Grinesa-->
-    
+
     <!--Mergimi-->
-     <p id="pershkrimi" class="ngjyra1">
-       Nature world tour and travels
-       <p id="quote" class="ngjyra1">
-         <em>
-           <q> Look deep into nature, and then you 
-           <br>
-           will understand everything better.    
-        </q>
+
+    <p id="pershkrimi" class="ngjyra1">
+        Nature world tour and travels
+    <p id="quote" class="ngjyra1">
+        <em>
+            <q> Look deep into nature, and then you
+                <br>
+                will understand everything better.
+            </q>
         </em>
-       </p>
-     </p>
+    </p>
+
     <table id="tabela">
-       <tr id="rreshti1">
+        <tr id="rreshti1">
             <td>
-             <p class="ngjyra1 fonti1">
-               <b>
-              Pithoragarh, Uttarakhand
-              </b>
-             </p>  
-             <p class="ngjyra1 fonti2">
-              Located in the eastern district of Uttarakhand, Pithoragarh boasts of irresistible natural beauty, high altitude grasslands and historic charm. It is the starting point for treks to the holy shrines of Kailash and Mansarovar.
-             </p>
-             <button class="butonat1">Read more ></button>
+                <p class="ngjyra1 fonti1">
+                    <b>
+                        Pithoragarh, Uttarakhand
+                    </b>
+                </p>
+                <p class="ngjyra1 fonti2">
+                    Located in the eastern district of Uttarakhand, Pithoragarh boasts of irresistible natural beauty,
+                    high altitude grasslands and historic charm. It is the starting point for treks to the holy shrines
+                    of Kailash and Mansarovar.
+                </p>
+                <button class="butonat1">Read more ></button>
             </td>
             <td>
-              <p class="ngjyra1 fonti1">
-                <b>
-                  Munnar, Kerala
-                </b>
-              </p>  
-              <p class="ngjyra1 fonti2">
-                Spend some “me” time in nature’s lap in Munnar, a hill station famous for its tea and spice plantations. Camping, parasailing, birdwatching, trekking, wildlife spotting, fishing, boating and rock climbing are the popular activities here.   
-             </p>
-             <button class="butonat1">Read more ></button>
-
-            </td>
-
-            <td>
-              <p class="ngjyra1 fonti1">
-                <b>
-                  Valley of Flowers, Uttarakhand
-                </b>
-              </p>  
-              <p class="ngjyra1 fonti2">
-                Nestled in the Nanda Devi Biosphere, the Valley of Flowers is the most attractive place in Uttarakhand. Every inch of this place is blessed with unparalleled natural beauty in the form of endemic alpine flowers and diversity of flora,             </p>
+                <p class="ngjyra1 fonti1">
+                    <b>
+                        Munnar, Kerala
+                    </b>
+                </p>
+                <p class="ngjyra1 fonti2">
+                    Spend some “me” time in nature’s lap in Munnar, a hill station famous for its tea and spice
+                    plantations. Camping, parasailing, birdwatching, trekking, wildlife spotting, fishing, boating and
+                    rock climbing are the popular activities here.
+                </p>
                 <button class="butonat1">Read more ></button>
 
             </td>
 
             <td>
-              <p class="ngjyra1 fonti1">
-                <b>
-                  Kaas Plateau, Maharashtra
-                </b>
-              </p>  
-              <p class="ngjyra1 fonti2">
-                Another ethereal beauty is the Kaas Plateau, which is a UNESCO World Biodiversity Site. It attracts visitors with more than 850 different and unique species of flowering plants. When these flowering plants are in full bloom in the months of August-September             </p>
+                <p class="ngjyra1 fonti1">
+                    <b>
+                        Valley of Flowers, Uttarakhand
+                    </b>
+                </p>
+                <p class="ngjyra1 fonti2">
+                    Nestled in the Nanda Devi Biosphere, the Valley of Flowers is the most attractive place in
+                    Uttarakhand. Every inch of this place is blessed with unparalleled natural beauty in the form of
+                    endemic alpine flowers and diversity of flora, </p>
                 <button class="butonat1">Read more ></button>
 
+            </td>
+
+            <td>
+                <p class="ngjyra1 fonti1">
+                    <b>
+                        Kaas Plateau, Maharashtra
+                    </b>
+                </p>
+                <p class="ngjyra1 fonti2">
+                    Another ethereal beauty is the Kaas Plateau, which is a UNESCO World Biodiversity Site. It attracts
+                    visitors with more than 850 different and unique species of flowering plants. When these flowering
+                    plants are in full bloom in the months of August-September </p>
+                <button class="butonat1">Read more ></button>
+
+<<<<<<< HEAD
               </td>
        </tr>
          <tr> <td colspan="4"><hr class="ngjyra1"></td></tr>
        <tr id="rreshti2">
+=======
+            </td>
+        </tr>
 
-       </tr>
-     <!--Mergimi-->
+        <tr id="rreshti2">
 
-     <!-- lavdimi -->
 
+        </tr>
+        <!--Mergimi-->
+
+        <!-- lavdimi -->
+
+        <tr id="rreshti3">
+>>>>>>> 8549a2d9ba4477896dbb1d29e3e9ceb559ea27ca
+
+            <td> 
+                <p class="ngjyra1 fonti1"><b>Quick links</b></p>
+
+                <ul class="list1">
+                    <li class="l1"><a class="link1" href="#">Homepage</a></li>
+                    <li class="l1"><a class="link1" href="#">Contact Us</a></li>
+                    <li class="l1"><a class="link1" href="#">Sitemap</a></li>
+                    <li class="l1"><a class="link1" href="#">Privacy Policy</a></li>
+                    <li class="l1"><a class="link1" href="#">Terms of Use</a></li>
+                    <li class="l1"><a class="link1" href="#">Copyright Information</a></li>
+                    <li class="l1"><a class="link1" href="#"> Website Matters</a></li>
+                </ul>
+                <br>
+                <br>
+                <br>
+            </td>
+            <td>
+                <p class="ngjyra1 fonti1"><b>How To Find Us</b></p>
+
+                <p class="ngjyra1 fonti2">Company Name
+                    <br>Street Name & Number
+                    <br>Town
+                    <br>Postcode/Zip
+                    <br>
+                    <br>Tel:xxxxx xxxxxxxxxx
+                    <br>Fax:xxxxx xxxxxxxxxx
+                    <br>Email:contact@mydomain.com</p>
+            </td>
+
+            <td>
+                <p class="ngjyra1 fonti1">
+                    <b>From The Blog</b>
+                </p>
+                <p id="paragraph-red" style="color: coral">
+                    <b>Blog Post Title</b>
+                    <br></p>
+                <p class="ngjyra1 fonti2">
+                    <small>Posted by Admin on 00.00.0000</small>
+                    <br>
+                    Vestibulumaccumsan egestibulum <br>
+                    eu justo convallis augue estas <br>
+                    aenen elit intesque sed facilispede <br>
+                    estibulum.</p>
+                <br>
+                <br>
+            </td>
+            <td>
+                <p class="ngjyra1 fonti1">
+                    <b>Connect With Us</b></p>
+                <p>
+                    <img src="images/photo1.png" alt="foto e linkedin" title="linkedin" width="30" height="30">
+                    <img src="images/photo2.png" alt="foto e google plus" title="google+" width="30" height="30">
+                    <img src="images/photo3.png" alt="foto e twiter-it" title="twiter" width="30" height="30">
+                    <br>
+
+<<<<<<< HEAD
        <tr id="rreshti3">
        </tr>
+=======
+                 <p class="ngjyra1 fonti1">
+                    Newsletter
+                </p>
+                <input  class="email" type="email" name="email" placeholder="Enter Your Email Here">
+                <br>
+                <br>
+                <input  class="submit-butoni" type="submit" name="Submit" value="SIGN UP">
+                <br>
+            </td>
+>>>>>>> 8549a2d9ba4477896dbb1d29e3e9ceb559ea27ca
 
+        </tr>
     </table>
-   
+
     <!--Lavdimi   -->
 
 
-  </div> 
+</div>
 
 
 </body>
