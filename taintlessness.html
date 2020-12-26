@@ -139,8 +139,31 @@
 
       .label3{
        color:rgb(148, 121, 98);}
- 
+       #fotoja_pershkrimi{
+           width: 100%;
+           display: flex;
+	       flex-direction: row;
+	       flex-wrap: nowrap;
+	       justify-content: space-between;
+	       align-items: stretch;
+	       align-content: stretch;
+       }
+       #fotoja_pershkrimi img{
+           width: 50%;
+           height: 400px;
+       }
+       #relativ{
+           position: relative;
+           width: 40%;
+           display: inline;
+       }
+       #pershkrimi1{
+           position: absolute;
+           bottom: 30px;
+           right: 0;
 
+       }
+          
       
 
     </style>
@@ -164,30 +187,25 @@
 </tr>
 </table>
 
-<br><br><br>
-
-<table>
-<tr>
-<td width="500px" height="400px"><image src="timages/nature.jpg" width="500" height="400"></td>
-<td width="30" height="400"></td>
-<td width="30" height="400"><label class="flabel">Revisions to the Nature Index</label><br><br>
-The Nature Index database has been updated to include author affiliation information from a revised list of journals. The database now indexes 82 high-quality science journals, updated from the previous 68, to provide more even coverage of disciplines.
-<br><br>
-<button class="butonat1">Read more ></button>
-</td>
-</tr>
-
-<table>
 </div>
 
 <div id="homepage">
     <div id="fotoja_pershkrimi">
+       <img src="images/nature.jpg" >
+        <div id="relativ">
+       <div id="pershkrimi1"><h1 class="ngjyra1"> Revisions to the Nature Index</h1>
+       <p class="ngjyra1">The Nature Index database has been updated to include author affiliation information from a revised list
+            of journals. The database now indexes 82 high-quality science journals, updated from the previous 68, to provide more
+             even coverage of disciplines.
+             </p>
+        <br><br>
+        <button class="butonat1">Read more ></button>
+        </div>
+        </div>
+        
+        
+    </div>>
 
-
-    </div>
-    <!-- Grinesa-->
-
-    <!--Mergimi-->
     <p id="pershkrimi" class="ngjyra1">
         Nature world tour and travels.
     <p id="quote" class="ngjyra1">
@@ -219,7 +237,7 @@ The Nature Index database has been updated to include author affiliation informa
                     <b>
                         Munnar, Kerala
                     </b>
-                </p>
+                </p> 
                 <p class="ngjyra1 fonti2">
                     Spend some “me” time in nature’s lap in Munnar, a hill station famous for its tea and spice
                     plantations. Camping, parasailing, birdwatching, trekking, wildlife spotting, fishing, boating and
@@ -306,9 +324,7 @@ The Nature Index database has been updated to include author affiliation informa
                 </tr>
                 <tr> <td colspan="4"><hr class="h-Tagu"></td></tr>
 
-         <!--  Mergimi  -->
-
-        <!-- lavdimi -->
+    
         <tr class="rreshti3">
             <td><p class="ngjyra1 fonti1"><b>Quick links</b></p></td>
             <td><p class="ngjyra1 fonti1"><b>How To Find Us</b></p></td>
@@ -381,7 +397,7 @@ The Nature Index database has been updated to include author affiliation informa
          <p><small>Copyright &copy;2013-All Rights Reserved-Domain Name</small></p>
          <p id="text"><small>Templete by OS Templates</small></p>
      </footer>
-    <!--Lavdimi  -->
+    
 
 
 </div>
