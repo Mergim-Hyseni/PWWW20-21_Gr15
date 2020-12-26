@@ -70,18 +70,12 @@
             margin-right: 160px;
 
         }
-
-        .butonat1:focus{
-            border-radius: 10px;
-            border-style: solid;
-            border-color: rgb(148, 121, 98);
-
-        }.butonat2:focus{
-            border-radius: 10px;
-            border-style: solid;
-            border-color: rgb(148, 121, 98);
-
+        .mr{
+            margin-left: 5px;
+            margin-right: 5px;
         }
+
+      
         
         .fotot1{
             width: 100%;
@@ -89,18 +83,20 @@
         }
         .email {
             color: white;
-            background-color: gainsboro;
-            padding: 5px;
+            width: 100%;
+            background-color: rgb(230, 223, 217);
+            padding: 10px;
+            border: none;
             border-radius: 10px;
             font-size: 20px;
-            border-color: rgb(148, 121, 98);
         }
         .submit-butoni {
             color: white;
             background-color: rgb(229, 89, 61);
-            padding: 5px;
+            padding: 10px;
             border-radius: 10px;
             font-size: 20px;
+            border-style: solid;
             border-color: rgb(148, 121, 98);
         }
         .list1 {
@@ -132,8 +128,9 @@
 
      .label-font{
       color: rgb(148, 121, 98);
-      font-size:25px;
-      font-family: Arial, Helvetica, sans-serif;
+      font-size:30px;
+      font-weight: 530; 
+      font-family: serif;
       }
 
 
@@ -161,7 +158,9 @@
            position: absolute;
            bottom: 30px;
            right: 0;
-
+       }
+       #shkronjaT{
+           font-size: 37px;;
        }
           
       
@@ -175,7 +174,7 @@
 <div id="navigation">
 <table id="tabela1">
 <tr>
-<td width="20%"><label class="label-font">TAINTLESSNESS</label></td>
+<td width="20%"><label class="label-font"><span id="shkronjaT">T</span>AINTLESSNESS</label></td>
 <td width="60%"></td>
 <td width="10%"><input class="email" type="text" placeholder="Search our website..."></td>
 <td width="5%"><input class="submit-butoni" type="submit" value="search"></td>
@@ -301,7 +300,6 @@
                     <p class="ngjyra1 fonti2">
                         Antelope’s title as Arizona’s most photographed site is a testament to its otherworldly beauty.
                     </p>
-                    <button class="butonat1">View This Project >></button>
 
                 </td>
                 <td>
@@ -309,7 +307,6 @@
                     <p class="ngjyra1 fonti2">
                         The Granite State’s White Mountains are THE place to be come leaf-peeping season.                
                     </p>
-                    <button class="butonat1">View This Project >></button>
 
 
                 </td>
@@ -318,9 +315,14 @@
                     <p class="ngjyra1 fonti2">
                         Every year, visitors from all around the world converge on the rim of Crater Lake            
                     </p>
-                    <button class="butonat1">View This Project >></button>
 
                 </td> 
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button class="butonat1">View This Project >></button> </td>
+                    <td><button class="butonat1">View This Project >></button> </td>
+                    <td><button class="butonat1">View This Project >></button> </td>
                 </tr>
                 <tr> <td colspan="4"><hr class="h-Tagu"></td></tr>
 
@@ -377,9 +379,12 @@
                 <br>
             </td>
             <td>
-                    <img src="images/photo1.png" alt="foto e linkedin" title="linkedin" width="30" height="30">
-                    <img src="images/photo2.png" alt="foto e google plus" title="google+" width="30" height="30">
-                    <img src="images/photo3.png" alt="foto e twiter-it" title="twiter" width="30" height="30">
+                    <img src="images/photo1.png" class="mr" style="margin-left: ;" alt="foto e linkedin" title="linkedin" width="50px" height="50px">
+                    <img src="images/photo2.png"class="mr" alt="foto e twiter-it" title="twiter" width="50px" height="50px">
+                    <img src="images/photo3.png"class="mr" alt="" title="" width="50px" height="50px">
+                    <img src="images/photo4.png"class="mr" alt="foto e google plus" title="google+" width="50px" height="50px">
+                    <img src="images/photo5.png"class="mr" alt="" title="" width="50px" height="50px">
+
                     <br>
 
                  <p class="ngjyra1 fonti1">
