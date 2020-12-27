@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CreateAccount</title>
+</head>
+<style type="text/css">
+    body{
+        background-image: url("images/photo.jpeg");
+        background-color: #cccccc;
+        background-position: center ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 500px;
+
+    }
+
+    fieldset{
+        text-align: center;
+        border-radius: 20px;
+        width: 100%;
+        background-color: rgba(240, 240, 240,0.3);
+    }
+    #title{
+        margin: 0;
+        color: #96877B;
+        font-size: 30px;
+    }
+    #shkronjaT{
+        font-size: 37px;
+    }
+    .formulari{
+        margin-top: 10%;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    #email,#password,#Name,#Surname,#BirthDate{
+        outline: none;
+        border-radius: 5px;
+        background-color: rgba(230, 222, 219,0.3);
+        height: 20px;
+    }
+    #BirthDate{
+        color:#96877B;
+    }
+    .label{
+
+        margin: 0;
+    }
+    .input-paragraph{
+        margin-top: 0;
+    }
+    #submit-button,#reset{
+        outline:none;
+        color:#96877B;
+        background-color: lightsteelblue;
+    }
+    #additional-information{
+        text-align: center;
+        color:#96877B;
+        font-size: 20px;
+    }
+    #link{
+        text-decoration: none;
+    }
+    #link:hover{
+        color: #E9593E;
+    }
+</style>
+<body>
+<p id="title"><span id="shkronjaT">T</span>AINTLESSNESS</p>
+
+<div class="Login">
+    <form class="formulari" action="#">
+        <fieldset>
+            <legend>Create Account</legend>
+            <label class="label" for="Name">Name:</label>
+            <p class="input-paragraph">
+                <input type="text" id="Name" name="Name" placeholder="Write your name here">
+            </p>
+            <label class="label" for="Surname">Surname:</label>
+            <p class="input-paragraph">
+                <input type="text" id="Surname" name="Surname" placeholder="Write your surname here">
+            </p>
+            <label class="label" for="BirthDate">Date of birth:</label>
+            <p class="input-paragraph">
+                <input type="date" id="BirthDate" name="Date">
+            </p>
+            <label class="label" for="email">Email:</label>
+            <p class="input-paragraph"><input type="email" name="email" placeholder="Write your email" id="email"></p>
+            <label class="label" for="password">Password:</label>
+            <p class="input-paragraph"> <input type="password" name="password" placeholder="Write your password" id="password"></p>
+            <p><input type="submit" value="Submit" id="submit-button">
+                <input type="reset" id="reset"></p>
+        </fieldset>
+    </form>
+</div>
+</body>
+</html>
