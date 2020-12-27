@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -128,63 +127,96 @@
             border: none;
             background: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), to(transparent), color-stop(50%, #DFDED9));
         }
+        #tabela1{
+            width: 100%;
+        }
+        #tabela1-rreshti1-kolona1{
+            float: left;
+            padding: 0;
+            margin: 10px 0 0 0;
+        }
+        #tabela1-rreshti1-kolona1 p{
+            margin: 0;
+            color: #96877B;
+            font-size: 30px;
+        }
+        #tabela1-rreshti1-kolona2{
+            float: right;
+            margin: 10px 0 0 0;
+            padding-right: 0 ;
+        }
+        #search-box,#button-search{
+            border-radius: 10px;
+            height: 30px;
+        }
+        #search-box{
+            outline: none;
+            background-color: #E6DEDB;
+        }
+        #button-search{
+            border: none;
+            outline: none;
+            background-color: #E9593E;
+            color: #FBF0DC;
+        }
+        .navigation-bar{
+            width: 100%;
+        }
+        .item1,.item2,.item3,.item4,.item5,.item6,.item7{
+            outline: none;
+            margin-right: 1px;
+            background-color: #E9593E;
+            color: #FBF0DC;
+            border-style: none;
+            width: 14%;
+        }
+        .item1{
+            border-bottom-left-radius: 10px;
+            border-top-left-radius: 10px;
+            background-color: #957964;
+        }
+        .item7{
+            border-bottom-right-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .flex-container{
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            align-content: center;
+            height: 40px;
+            margin-top: 30px;
+            width: 100%;
 
-
-     .label-font{
-      color: rgb(148, 121, 98);
-      font-size:25px;
-      font-family: Arial, Helvetica, sans-serif;
-      }
-
-
-      .label3{
-       color:rgb(148, 121, 98);}
- 
-
-      
+        }
 
     </style>
-
-
 </head>
 <body>
-
-<div id="navigation">
 <table id="tabela1">
-<tr>
-<td width="20%"><label class="label-font">TAINTLESSNESS</label></td>
-<td width="60%"></td>
-<td width="10%"><input class="email" type="text" placeholder="Search our website..."></td>
-<td width="5%"><input class="submit-butoni" type="submit" value="search"></td>
-</tr>
-<p><p>
-<p><p>
-<tr>
-<td><label class="label3">Find something interesting</label></td>
-</tr>
+    <tr>
+        <td id="tabela1-rreshti1-kolona1"><p>TAINTLESSNESS
+            </p></td>
+        <td id="tabela1-rreshti1-kolona2">
+            <input type="search" name="search-box" placeholder="Search Our Website..." id="search-box">
+            <input type="button" name="button-search" value="Search" id="button-search">
+        </td>
+    </tr>
+    <tr class="navigation-bar" >
+        <td id="nacigation-bar" colspan="2">
+            <div class="flex-container">
+           <button name="Homepage" class="item1">HOMEPAGE</button>
+            <button name="style-demo" class="item2">STYLE DEMO</button>
+            <button name="full-width" class="item3">FULL WIDTH</button>
+            <button name="drop-down>" class="item4">DROPDOWN</button>
+            <button name="gallery" class="item5">GALLERY</button>
+            <button name="portfolio" class="item6">PORTFOLIO</button>
+            <button name="a-link-text" class="item7">A LINK TEXT</button>
+            </div>
+        </td>
+    </tr>
 </table>
 
-<br><br><br>
-
-<table>
-<tr>
-<td width="500px" height="400px"><image src="timages/nature.jpg" width="500" height="400"></td>
-<td width="30" height="400"></td>
-<td width="30" height="400"><label class="flabel">Revisions to the Nature Index</label><br><br>
-The Nature Index database has been updated to include author affiliation information from a revised list of journals. The database now indexes 82 high-quality science journals, updated from the previous 68, to provide more even coverage of disciplines.
-<br><br>
-<button class="butonat1">Read more ></button>
-</td>
-</tr>
-
-<table>
-</div>
-
-<div id="homepage">
-    <div id="fotoja_pershkrimi">
-
-
-    </div>
     <!-- Grinesa-->
 
     <!--Mergimi-->
