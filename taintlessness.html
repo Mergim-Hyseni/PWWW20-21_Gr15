@@ -5,6 +5,10 @@
     <title>Taintlessness</title>
 
     <style>
+        *{
+            font-family: serif;
+
+        }   
         body{
             padding-left: 50px;
             padding-right: 20px;
@@ -141,19 +145,25 @@
             font-size: 30px;
         }
         #tabela1-rreshti1-kolona2{
-            float: right;
+            position: relative;
+            right: 0;
             margin: 10px 0 0 0;
             padding-right: 0 ;
         }
         #search-box,#button-search{
             border-radius: 10px;
+            padding-left: 4px;
+            border: none;
             height: 30px;
         }
         #search-box{
+            float: right;
+            margin-right: 5px;
             outline: none;
             background-color: #E6DEDB;
         }
         #button-search{
+            float:right;
             border: none;
             outline: none;
             background-color: #E9593E;
@@ -161,6 +171,7 @@
         }
         .navigation-bar{
             width: 100%;
+            padding-right: 0px;
         }
         .item1,.item2,.item3,.item4,.item5,.item6,.item7{
             outline: none;
@@ -168,7 +179,7 @@
             background-color: #E9593E;
             color: #FBF0DC;
             border-style: none;
-            width: 14%;
+            width: 15%;
         }
         .item1{
             border-bottom-left-radius: 10px;
@@ -224,7 +235,7 @@
            right: 0;
        }
        #shkronjaT{
-           font-size: 37px;;
+           font-size: 40px;
        }
           
       
@@ -236,15 +247,19 @@
 <table id="tabela1">
 
     <tr>
-        <td id="tabela1-rreshti1-kolona1"><p>TAINTLESSNESS
+        <td id="tabela1-rreshti1-kolona1"><p><span id="shkronjaT">T</span>AINTLESSNESS
             </p></td>
         <td id="tabela1-rreshti1-kolona2">
-            <input type="search" name="search-box" placeholder="Search Our Website..." id="search-box">
             <input type="button" name="button-search" value="Search" id="button-search">
+            <input type="search" name="search-box" placeholder="Search Our Website..." id="search-box">
         </td>
     </tr>
+    <tr><td>
+<label class="label3">Find something interesting</label>
+
+    </td></tr>
     <tr class="navigation-bar" >
-        <td id="nacigation-bar" colspan="2">
+        <td class="navigation-bar" colspan="2">
             <div class="flex-container">
            <button name="Homepage" class="item1">HOMEPAGE</button>
             <button name="style-demo" class="item2">STYLE DEMO</button>
@@ -257,17 +272,7 @@
         </td>
     </tr>
 </table>
-
-    <!-- Grinesa-->
-
-    <!--Mergimi-->
-
-<td><label class="label3">Find something interesting</label></td>
-</tr>
-</table>
-
-</div>
-
+<br>
 <div id="homepage">
     <div id="fotoja_pershkrimi">
        <img src="images/nature.jpg" >
@@ -278,7 +283,7 @@
              even coverage of disciplines.
              </p>
         <br><br>
-        <button class="butonat1">Read more ></button>
+        <button class="butonat1">READ MORE >></button>
         </div>
         </div>
         
@@ -379,7 +384,7 @@
                 <td>
                     <img class="fotot1" src="images/canyon.jpeg" >
                     <p class="ngjyra1 fonti2">
-                        Antelope’s title as Arizona’s most photographed site is a testament to its otherworldly beauty.
+                        Antelope’s title as Arizona’s most photographed site is a testament 
                     </p>
 
                 </td>
@@ -460,7 +465,7 @@
                 <br>
             </td>
             <td>
-                    <img src="images/photo1.png" class="mr" style="margin-left: ;" alt="foto e linkedin" title="linkedin" width="50px" height="50px">
+                    <img src="images/photo1.png" class="mr" style="margin-left:0 ;" alt="foto e linkedin" title="linkedin" width="50px" height="50px">
                     <img src="images/photo2.png"class="mr" alt="foto e twiter-it" title="twiter" width="50px" height="50px">
                     <img src="images/photo3.png"class="mr" alt="" title="" width="50px" height="50px">
                     <img src="images/photo4.png"class="mr" alt="foto e google plus" title="google+" width="50px" height="50px">
