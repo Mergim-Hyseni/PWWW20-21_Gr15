@@ -69,18 +69,12 @@
             margin-right: 160px;
 
         }
-
-        .butonat1:focus{
-            border-radius: 10px;
-            border-style: solid;
-            border-color: rgb(148, 121, 98);
-
-        }.butonat2:focus{
-            border-radius: 10px;
-            border-style: solid;
-            border-color: rgb(148, 121, 98);
-
+        .mr{
+            margin-left: 5px;
+            margin-right: 5px;
         }
+
+      
         
         .fotot1{
             width: 100%;
@@ -88,18 +82,20 @@
         }
         .email {
             color: white;
-            background-color: gainsboro;
-            padding: 5px;
+            width: 100%;
+            background-color: rgb(230, 223, 217);
+            padding: 10px;
+            border: none;
             border-radius: 10px;
             font-size: 20px;
-            border-color: rgb(148, 121, 98);
         }
         .submit-butoni {
             color: white;
             background-color: rgb(229, 89, 61);
-            padding: 5px;
+            padding: 10px;
             border-radius: 10px;
             font-size: 20px;
+            border-style: solid;
             border-color: rgb(148, 121, 98);
         }
         .list1 {
@@ -188,12 +184,53 @@
             margin-top: 30px;
             width: 100%;
 
-        }
+
+
+     .label-font{
+      color: rgb(148, 121, 98);
+      font-size:30px;
+      font-weight: 530; 
+      font-family: serif;
+      }
+
+
+      .label3{
+       color:rgb(148, 121, 98);}
+       #fotoja_pershkrimi{
+           width: 100%;
+           display: flex;
+	       flex-direction: row;
+	       flex-wrap: nowrap;
+	       justify-content: space-between;
+	       align-items: stretch;
+	       align-content: stretch;
+       }
+       #fotoja_pershkrimi img{
+           width: 50%;
+           height: 400px;
+       }
+       #relativ{
+           position: relative;
+           width: 40%;
+           display: inline;
+       }
+       #pershkrimi1{
+           position: absolute;
+           bottom: 30px;
+           right: 0;
+       }
+       #shkronjaT{
+           font-size: 37px;;
+       }
+          
+      
+
 
     </style>
 </head>
 <body>
 <table id="tabela1">
+
     <tr>
         <td id="tabela1-rreshti1-kolona1"><p>TAINTLESSNESS
             </p></td>
@@ -220,6 +257,31 @@
     <!-- Grinesa-->
 
     <!--Mergimi-->
+
+<td><label class="label3">Find something interesting</label></td>
+</tr>
+</table>
+
+</div>
+
+<div id="homepage">
+    <div id="fotoja_pershkrimi">
+       <img src="images/nature.jpg" >
+        <div id="relativ">
+       <div id="pershkrimi1"><h1 class="ngjyra1"> Revisions to the Nature Index</h1>
+       <p class="ngjyra1">The Nature Index database has been updated to include author affiliation information from a revised list
+            of journals. The database now indexes 82 high-quality science journals, updated from the previous 68, to provide more
+             even coverage of disciplines.
+             </p>
+        <br><br>
+        <button class="butonat1">Read more ></button>
+        </div>
+        </div>
+        
+        
+    </div>>
+
+
     <p id="pershkrimi" class="ngjyra1">
         Nature world tour and travels.
     <p id="quote" class="ngjyra1">
@@ -251,7 +313,7 @@
                     <b>
                         Munnar, Kerala
                     </b>
-                </p>
+                </p> 
                 <p class="ngjyra1 fonti2">
                     Spend some “me” time in nature’s lap in Munnar, a hill station famous for its tea and spice
                     plantations. Camping, parasailing, birdwatching, trekking, wildlife spotting, fishing, boating and
@@ -315,7 +377,6 @@
                     <p class="ngjyra1 fonti2">
                         Antelope’s title as Arizona’s most photographed site is a testament to its otherworldly beauty.
                     </p>
-                    <button class="butonat1">View This Project >></button>
 
                 </td>
                 <td>
@@ -323,7 +384,6 @@
                     <p class="ngjyra1 fonti2">
                         The Granite State’s White Mountains are THE place to be come leaf-peeping season.                
                     </p>
-                    <button class="butonat1">View This Project >></button>
 
 
                 </td>
@@ -332,15 +392,18 @@
                     <p class="ngjyra1 fonti2">
                         Every year, visitors from all around the world converge on the rim of Crater Lake            
                     </p>
-                    <button class="butonat1">View This Project >></button>
 
                 </td> 
                 </tr>
+                <tr>
+                    <td></td>
+                    <td><button class="butonat1">View This Project >></button> </td>
+                    <td><button class="butonat1">View This Project >></button> </td>
+                    <td><button class="butonat1">View This Project >></button> </td>
+                </tr>
                 <tr> <td colspan="4"><hr class="h-Tagu"></td></tr>
 
-         <!--  Mergimi  -->
-
-        <!-- lavdimi -->
+    
         <tr class="rreshti3">
             <td><p class="ngjyra1 fonti1"><b>Quick links</b></p></td>
             <td><p class="ngjyra1 fonti1"><b>How To Find Us</b></p></td>
@@ -393,9 +456,12 @@
                 <br>
             </td>
             <td>
-                    <img src="images/photo1.png" alt="foto e linkedin" title="linkedin" width="30" height="30">
-                    <img src="images/photo2.png" alt="foto e google plus" title="google+" width="30" height="30">
-                    <img src="images/photo3.png" alt="foto e twiter-it" title="twiter" width="30" height="30">
+                    <img src="images/photo1.png" class="mr" style="margin-left: ;" alt="foto e linkedin" title="linkedin" width="50px" height="50px">
+                    <img src="images/photo2.png"class="mr" alt="foto e twiter-it" title="twiter" width="50px" height="50px">
+                    <img src="images/photo3.png"class="mr" alt="" title="" width="50px" height="50px">
+                    <img src="images/photo4.png"class="mr" alt="foto e google plus" title="google+" width="50px" height="50px">
+                    <img src="images/photo5.png"class="mr" alt="" title="" width="50px" height="50px">
+
                     <br>
 
                  <p class="ngjyra1 fonti1">
@@ -413,7 +479,7 @@
          <p><small>Copyright &copy;2013-All Rights Reserved-Domain Name</small></p>
          <p id="text"><small>Templete by OS Templates</small></p>
      </footer>
-    <!--Lavdimi  -->
+    
 
 
 </div>
