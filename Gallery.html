@@ -7,36 +7,48 @@
     <link rel = "stylesheet"type = "text/css" href = "nav.css" />
     <style>
     
-        div.gallery {
-      margin: 4% 4% 0% 0%;
+        .gallery {
       border: 1px solid rgb(150, 127, 107);
-      float: left;
-      width: 21.8%;
-      height:35%;
+      width: 100%;
+      height:100%;
       
       }
-    
-      .mr0{
-     margin-right: 0 !important;
-      }
 
-    div.gallery:hover {
+      .gallery:hover {
       border: 1px solid rgb(73, 65, 58);
-      transform: scale(1.2,1.2);
+      transform: scale(1.15,1.15);
+      -webkit-box-shadow: 4px 4px 9px 0px rgb(110, 96, 82) ;
+              box-shadow: 4px 4px 9px 0px rgb(110, 96, 82) ;
 
     }
 
-    div.gallery img {    
+     .gallery img {    
       width: 100%;
       height: 250px;
     }
 
-      div.desc {      
+      .desc {      
         padding: 15px;
         text-align: center;
         color: rgb(78, 66, 54)
 
       }    
+      .clear{
+        clear: both;
+      }
+      .item1{
+       background-color:  rgb(229, 89, 61);
+      }
+      .item5{
+        background-color: rgb(148, 121, 98);
+      }
+
+      .grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap:35px;
+  
+}
     
 
     </style>
@@ -59,30 +71,34 @@
     <tr class="navigation-bar" >
         <td id="navigation-bar" colspan="2">
             <div class="flex-container">
-           <a href="#" class="item1">HOMEPAGE</a>
+           <a href="taintlessness.html" class="item1">HOMEPAGE</a>
             <a href ="#" class="item2">STYLE DEMO</a>
             <a href="#" class="item3">FULL WIDTH</a>
             <a href="#" class="item4">DROPDOWN</a>
             <a href="Gallery.html" target="_blank" class="item5">GALLERY</a>
             <a href="#"class="item6">PORTFOLIO</a>
-            <a href="LogIn.html" class="item7">Log in</a>
+            <a href="LogIn.html" class="item7">LOG IN</a>
             </div>
         </td>
     </tr>
 </table>
 <br>
+<br>
+ <div class="grid-container">
+
 <div class="gallery">
   <a target="_blank" href="images/gallery-item-17.jpg">
     <img src="images/gallery-item-17.jpg" alt="Cinque Terre" >
   </a>
-  <div class="desc">Add a description of the image here</div>
+  <div class="desc">The cold winter comes as artist in her medium of ice.
+  </div>
 </div>
 
 <div class="gallery">
   <a target="_blank" href="images/gallery-item-18.jpg">
     <img src="images/gallery-item-18.jpg" alt="Cinque Terre" >
   </a>
-  <div class="desc">Add a description of the image here</div>
+  <div class="desc">If we could see the miracle of flowers clearly our whole life would change.</div>
 </div>
 
 
@@ -90,7 +106,8 @@
   <a target="_blank" href="images/gallery-item-19.jpg">
     <img src="images/gallery-item-19.jpg" alt="Cinque Terre" >
   </a>
-  <div class="desc">Add a description of the image here</div>
+  <div class="desc">Minds are like flowers; they open only when the time is right.
+  </div>
 </div>
 
   
@@ -100,7 +117,7 @@
   <a target="_blank" href="images/gallery-item-20.jpg">
     <img src="images/gallery-item-20.jpg" alt="Cinque Terre" width="600" height="400">
   </a>
-  <div class="desc">Add a description of the image here</div>
+  <div class="desc">Happiness held is the seed; Happiness shared is the flower.</div>
 </div>
  
       
@@ -111,7 +128,7 @@
         <a target="_blank" href="images/gallery-item-6.jpg">
           <img src="images/gallery-item-6.jpg" alt="Cinque Terre" >
         </a>
-        <div class="desc">Add a description of the image here</div>
+        <div class="desc">There's no better place to find yourself than sitting by a waterfall. </div>
       </div>
 
      
@@ -120,14 +137,14 @@
         <a target="_blank" href="images/gallery-item-8.jpg">
           <img src="images/gallery-item-8.jpg" alt="Cinque Terre" >
         </a>
-        <div class="desc">Add a description of the image here</div>
+        <div class="desc">Be calm like a calm lake, then you will look beautiful like a calm lake!   </div>
       </div>
 
       <div class="gallery">
         <a target="_blank" href="images/gallery-item-9.jpg">
           <img src="images/gallery-item-9.jpg" alt="Cinque Terre">
         </a>
-        <div class="desc">Add a description of the image here</div>
+        <div class="desc">A lake carries you into recesses of feeling otherwise impenetrable.   </div>
       </div>
 
 
@@ -135,7 +152,8 @@
         <a target="_blank" href="images/gallery-item-10.jpg">
           <img src="images/gallery-item-10.jpg" alt="Cinque Terre">
         </a>
-        <div class="desc">Add a description of the image here</div>
+        <div class="desc">Every lake belongs to the quietness desired by the swans.     
+        </div>
       </div>
 
             <!--     -->
@@ -145,21 +163,22 @@
         <a target="_blank" href="images/gallery-item-11.jpg">
           <img src="images/gallery-item-11.jpg" alt="Cinque Terre">
         </a>
-        <div class="desc">Add a description of the image here</div>
+        <div class="desc">The little lake you love is the biggest ocean for you!     
+        </div>
       </div>
 
       <div class="gallery">
         <a target="_blank" href="images/gallery-item-12.jpg">
           <img src="images/gallery-item-12.jpg" alt="Cinque Terre" >
         </a>
-        <div class="desc">Add a description of the image here</div>
+        <div class="desc"> Nature does not hurry, yet everything is accomplished.</div>
       </div>   
 
       <div class="gallery ">
         <a target="_blank" href="images/gallery-item-15.jpg">
           <img src="images/gallery-item-15.jpg" alt="Cinque Terre" >
         </a>
-        <div class="desc">Add a description of the image here</div>
+        <div class="desc">Choose only one master—nature. </div>
       </div>
 
 
@@ -167,7 +186,8 @@
         <a target="_blank" href="images/gallery-item-16.jpg">
           <img src="images/gallery-item-16.jpg" alt="Cinque Terre" >
         </a>
-        <div class="desc">Add a description of the image here</div>
+        <div class="desc">Balance is the perfect state of still water. Let that be our model.
+   </div>
       </div>
 
 
@@ -177,29 +197,39 @@
         <a target="_blank" href="images/gallery-item-1.jpg">
           <img src="images/gallery-item-1.jpg" alt="Cinque Terre" >
         </a>
-        <div class="desc">Add a description of the image here</div>
+        <div class="desc">It remains quiet within and is not disturbed on the surface.  
+        </div>
       </div>
   
       <div class="gallery">
         <a target="_blank" href="images/gallery-item-2.jpg">
           <img src="images/gallery-item-2.jpg" alt="Cinque Terre">
         </a>
-        <div class="desc">Add a description of the image here</div>
+        <div class="desc">Time wasted at the lake is time well spent.     
+         </div>
       </div>
   
       <div class="gallery">
         <a target="_blank" href="images/gallery-item-3.jpg">
           <img src="images/gallery-item-3.jpg" alt="Cinque Terre" >
         </a>
-        <div class="desc">Add a description of the image here</div>
+        <div class="desc">I had no plans of any destination. I wish to flow like a river.
+        </div>
       </div>
   
       <div class="gallery mr0">
         <a target="_blank" href="images/gallery-item-4.jpg">
           <img src="images/gallery-item-4.jpg" alt="Cinque Terre" >
         </a>
-        <div class="desc">Add a description of the image here</div>
-      </div>
+        <div class="desc">A river doesn’t just carry water, it carries life.
 
+        </div>
+      </div>
+</div>
+    </div> 
+      <div class="clear"></div>
+      <br>
+      <br><br>
+      
 </body>
 </html>
