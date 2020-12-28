@@ -1,0 +1,86 @@
+body{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+#tabela1{
+    width: 100%;
+}
+#tabela1-rreshti1-kolona1{
+    float: left;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+#tabela1-rreshti1-kolona1 p{
+    margin: 0;
+    color: #96877B;
+    font-size: 30px;
+}
+#tabela1-rreshti1-kolona2{
+    float: right;
+    padding-right: 0;
+}
+#search-box,#button-search{
+    border-radius: 10px;
+    height: 35px;
+    padding: 5px;
+    margin: 5px 0px 5px 5px;
+
+    float: right;
+}
+#search-box{
+    outline: none;
+    border: none;
+    background-color: #E6DEDB;
+}
+#button-search{
+    border: none;
+    outline: none;
+    background-color: #E9593E;
+    color: #FBF0DC;
+}
+.navigation-bar{
+    width: 100%;
+}
+.item1,.item2,.item3,.item4,.item5,.item6,.item7{
+    outline: none;
+    margin-right: 1px;
+    background-color: #E9593E;
+    color: #FBF0DC;
+    border-style: none;
+    width: 16%;
+    text-align: center;
+    padding-top: 10px;
+    text-decoration: none;
+}
+.item1{
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: #957964;
+}
+.item7{
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.flex-container{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-content: center;
+    height: 40px;
+    margin-top: 30px;
+    width: 100%;
+}
+.label3{
+color:rgb(148, 121, 98);}
+#fotoja_pershkrimi{
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   justify-content: space-between;
+   align-items: stretch;
+   align-content: stretch;
+}
+#shkronjaT{
+   font-size: 37px;;
+}
