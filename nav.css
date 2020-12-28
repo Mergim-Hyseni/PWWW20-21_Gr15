@@ -49,8 +49,9 @@ body{
     border-style: none;
     width: 16%;
     text-align: center;
-    padding-top: 10px;
     text-decoration: none;
+    font-size: 17px;
+    padding: 10px;
 }
 .item1{
     border-bottom-left-radius: 10px;
@@ -83,4 +84,56 @@ color:rgb(148, 121, 98);}
 }
 #shkronjaT{
    font-size: 37px;;
+}
+.dropdown{
+     display: inline;
+     position: relative;
+     width: 16%;
+     margin-right: 1px;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    margin-top: 1px;
+    min-width: 120%;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+
+}
+.dropbtn{
+    outline: none;
+    background-color: #E9593E;
+    color: #FBF0DC;
+    border-style: none;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 0;
+    font-size: 17px;
+    font-family: serif;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+.dropdown:hover .dropbtn{
+    background-color:rgb(148, 121, 98);
+    
+}
+.dropdown-content a{
+    display: block;
+    color: black;
+    margin-right: 1px;
+    border-style: none;
+    text-align: left;
+    padding: 10px;
+    text-decoration: none;
+
+}
+.dropdown-content a:hover{
+     
+    color:white ;
+    background-color: rgb(148, 121, 98);
+
 }
