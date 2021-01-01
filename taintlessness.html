@@ -158,10 +158,13 @@
         transform: rotate3d(0,1,0,180deg);
     
        }
-
-             
-
-
+      
+       .block{
+           display: block;
+       }
+       .none{
+           display: none;
+       }
     </style>
 </head>
 <body>
@@ -248,7 +251,11 @@
                     high altitude grasslands and historic charm. It is the starting point for treks to the holy shrines
                     of Kailash and Mansarovar.
                 </p>
-               <!-- <button class="butonat1">Read more ></button> -->
+                <p id="pithoragarh" class="ngjyra1 fonti2 none">
+                    Pithoragarh is a Himalayan town with a Municipal Board in Pithoragarh district in the Indian state of Uttarakhand. 
+                    It is the largest organised semi-urbanised to urbanised town in the hills of Uttarakhand.The town has all the facilities
+                     including an airport.
+                </p>
             </td>
             <td>
                 <p class="ngjyra1 fonti1">
@@ -261,8 +268,11 @@
                     plantations. Camping, parasailing, birdwatching, trekking, wildlife spotting, fishing, boating and
                     rock climbing are the popular activities here.
                 </p>
-               <!-- <button class="butonat1">Read more ></button> -->
-
+                <p id="Munnar" class="ngjyra1 fonti2 none">
+                    Munnar is a town and hill station located in the Idukki district of the southwestern Indian state of Kerala.
+                     Munnar is situated at around 1,600 metres (5,200 ft) above mean sea level, in the Western Ghats mountain range.
+                      Munnar is also called the "Kashmir of South India" and is a popular honeymoon destination
+                </p>
             </td>
 
             <td>
@@ -275,8 +285,11 @@
                     Nestled in the Nanda Devi Biosphere, the Valley of Flowers is the most attractive place in
                     Uttarakhand. Every inch of this place is blessed with unparalleled natural beauty in the form of
                     endemic alpine flowers and diversity of flora, </p>
-               <!-- <button class="butonat1">Read more ></button> -->
-
+                    <p id="Valley" class="ngjyra1 fonti2 none">
+                        Valley of Flowers National Park is an Indian national park, located in North Chamoli and Pithoragarh, 
+                        in the state of Uttarakhand and is known for its meadows of endemic alpine flowers and the variety of flora.
+                         This richly diverse area is also home to rare and endangered animals, including the Asiatic black bear.
+                    </p>
             </td>
 
             <td>
@@ -289,15 +302,19 @@
                     Another ethereal beauty is the Kaas Plateau, which is a UNESCO World Biodiversity Site. It attracts
                     visitors with more than 850 different and unique species of flowering plants. When these flowering
                     plants are in full bloom in the months of August-September </p>
-               <!-- <button class="butonat1">Read more ></button> -->
+                    <p id="KaasPlateau" class="ngjyra1 fonti2 none">
+                        The Kas Plateau Reserved Forest, also known as the Kaas Pathar, is a plateau situated 25 kilometres west from Satara 
+                        city in Maharashtra, India. It falls under the Sahyadri Sub Cluster of the Western Ghats, and it became a part of a
+                         UNESCO World Natural Heritage Site in 2012
+                    </p>
 
               </td>
        </tr>
-        <tr>
-            <td> <button class="butonat2">Read more ></button></td>
-            <td> <button class="butonat2">Read more ></button></td>
-            <td> <button class="butonat2">Read more ></button></td>
-            <td> <button class="butonat2">Read more ></button></td>
+        <tr> 
+            <td><button  id="readbtn1" class="butonat2">Read more>></button></td>
+            <td> <button id="readbtn2" class="butonat2">Read more >></button></td>
+            <td> <button id="readbtn3" class="butonat2">Read more >></button></td>
+            <td> <button id="readbtn4" class="butonat2">Read more >></button></td>
         </tr>
          <tr> <td colspan="4"><hr class="h-Tagu"></td></tr>
        <tr id="rreshti2">
@@ -423,15 +440,94 @@
      </footer>
      
 
-     <div id="gallery">
-       
-
-
-     </div>
+         
 
 
 </div>
+<br><br><br>
+           
+<script>
+     var btn1=document.getElementById("readbtn1");
+     var btn2=document.getElementById("readbtn2");
+     var btn3=document.getElementById("readbtn3");
+     var btn4=document.getElementById("readbtn4");
+     
+     btn1.addEventListener("click",f,false);
+     btn2.addEventListener("click",f,false);
+     btn3.addEventListener("click",f,false);
+     btn4.addEventListener("click",f,false);
+     
+      function f(){
+          funksioni(this);
+      }
+      function funksioni(e)
+      { 
+          if(e.getAttribute("id")=="readbtn1")
+          {
+            var paragrafi=document.getElementById('pithoragarh');
+           var klasa=paragrafi.getAttribute('class').split(" ");           
+           if(klasa[2]=="none")
+           {
+               paragrafi.setAttribute("class",klasa[0]+" "+klasa[1]+" block");
+              btn1.innerText="Hide"
+            }
+           else{ paragrafi.setAttribute("class",klasa[0]+" "+klasa[1]+" none");
+           btn1.innerText="Read more >>";
+            }
+           }
+               
 
+          if(e.getAttribute("id")=="readbtn2")
+          {
+            var paragrafi=document.getElementById('Munnar');
+           var klasa=paragrafi.getAttribute('class').split(" ");           
+           if(klasa[2]=="none")
+           {
+               paragrafi.setAttribute("class",klasa[0]+" "+klasa[1]+" block");
+              btn2.innerText="Hide"
+            }
+           else{ paragrafi.setAttribute("class",klasa[0]+" "+klasa[1]+" none");
+           btn2.innerText="Read more >>";
+            }
+        
+
+          }
+
+          if(e.getAttribute("id")=="readbtn3")
+          {
+            var paragrafi=document.getElementById('Valley');
+           var klasa=paragrafi.getAttribute('class').split(" ");           
+           if(klasa[2]=="none")
+           {
+               paragrafi.setAttribute("class",klasa[0]+" "+klasa[1]+" block");
+              btn3.innerText="Hide"
+            }
+           else{ paragrafi.setAttribute("class",klasa[0]+" "+klasa[1]+" none");
+           btn3.innerText="Read more >>";
+        }
+        
+          }
+
+          if(e.getAttribute("id")=="readbtn4")
+          {
+            var paragrafi=document.getElementById('KaasPlateau');
+           var klasa=paragrafi.getAttribute('class').split(" ");           
+           if(klasa[2]=="none")
+           {
+               paragrafi.setAttribute("class",klasa[0]+" "+klasa[1]+" block");
+              btn4.innerText="Hide"
+            }
+           else{ paragrafi.setAttribute("class",klasa[0]+" "+klasa[1]+" none");
+           btn4.innerText="Read more >>";
+          }
+        
+          }
+        
+          
+
+
+      }
+</script>
 
 </body>
 </html>
