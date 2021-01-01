@@ -54,6 +54,7 @@
             font-size: 20px;
             border-style: solid;
             border-color: rgb(148, 121, 98);
+            text-decoration: none;
 
         }
 
@@ -165,6 +166,13 @@
        .none{
            display: none;
        }
+       .relative{
+          position: relative;
+       }
+       .absolute{
+          position: absolute;
+          top: 0px;
+       }
     </style>
 </head>
 <body>
@@ -213,12 +221,17 @@
        <img src="images/nature.jpg" >
         <div id="relativ">
        <div id="pershkrimi1"><h1 class="ngjyra1"> Revisions to the Nature Index</h1>
-       <p class="ngjyra1">The Nature Index database has been updated to include author affiliation information from a revised list
+       <p class="ngjyra1 fonti2">The Nature Index database has been updated to include author affiliation information from a revised list
             of journals. The database now indexes 82 high-quality science journals, updated from the previous 68, to provide more
              even coverage of disciplines.
              </p>
+        <p id="revision" class="ngjyra1 fonti2 none">
+            The expansion alleviates the over-representation of astronomy and astrophysics articles, and increases the coverage
+             of articles in Earth and environmental sciences, and the life sciences.We have also added high-quality research journals 
+             that have emerged in the years since the list was first compiled.
+        </p>
         <br><br>
-        <button class="butonat1">Read more ></button>
+        <button id="readbtn0" class="butonat1">READ MORE >></button>
         </div>
         </div>
         
@@ -311,7 +324,7 @@
               </td>
        </tr>
         <tr> 
-            <td><button  id="readbtn1" class="butonat2">Read more>></button></td>
+            <td><button  id="readbtn1" class="butonat2">Read more >></button></td>
             <td> <button id="readbtn2" class="butonat2">Read more >></button></td>
             <td> <button id="readbtn3" class="butonat2">Read more >></button></td>
             <td> <button id="readbtn4" class="butonat2">Read more >></button></td>
@@ -319,8 +332,9 @@
          <tr> <td colspan="4"><hr class="h-Tagu"></td></tr>
        <tr id="rreshti2">
               
-                <td>  
-                    <p class="ngjyra1 fonti1">
+                <td class="relative">  
+                    <div class="absolute">
+                    <p class="ngjyra1 fonti1" style="margin-top: 0px;">
                         <b>
                          Most beautiful places in the united states
                         </b>
@@ -329,6 +343,7 @@
                         Listen up, Americans: Let's take a second to appreciate all the astounding landscapes Mother 
                         Nature has gifted us. From Alaska and Arizona to Maine and New York, here are the most jaw-dropping places in the USA.
                     </p>
+                    </div>
               
                 </td>
                 <td>
@@ -339,10 +354,9 @@
 
                 </td>
                 <td>
-                    <img class="fotot1" src="images/fjords.jpeg" >
+                    <img class="fotot1" src="images/glacier-park.jpg" >
                     <p class="ngjyra1 fonti2">
-                        The Granite State’s White Mountains are THE place to be come leaf-peeping season.                
-                    </p>
+                        Glacier National Park is an American national park located in northwestern Montana </p>
 
 
                 </td>
@@ -356,9 +370,9 @@
                 </tr>
                 <tr>
                     <td></td>
-                    <td><button class="butonat1">View This Project >></button> </td>
-                    <td><button class="butonat1">View This Project >></button> </td>
-                    <td><button class="butonat1">View This Project >></button> </td>
+                    <td><a  href="project1.html" class="butonat1"  target="_blank">View This Project >></a> </td>
+                    <td><a  href="project2,.html" class="butonat1"  target="_blank">View This Project >></a> </td>
+                    <td><a  href="project3.html" class="butonat1"  target="_blank">View This Project >></a> </td>
                 </tr>
                 <tr> <td colspan="4"><hr class="h-Tagu"></td></tr>
 
@@ -447,11 +461,13 @@
 <br><br><br>
            
 <script>
+     var btn0=document.getElementById("readbtn0");
      var btn1=document.getElementById("readbtn1");
      var btn2=document.getElementById("readbtn2");
      var btn3=document.getElementById("readbtn3");
      var btn4=document.getElementById("readbtn4");
      
+     btn0.addEventListener("click",f,false)
      btn1.addEventListener("click",f,false);
      btn2.addEventListener("click",f,false);
      btn3.addEventListener("click",f,false);
@@ -462,7 +478,21 @@
       }
       function funksioni(e)
       { 
-          if(e.getAttribute("id")=="readbtn1")
+          if(e.getAttribute("id")=="readbtn0")
+          {
+            var paragrafi=document.getElementById('revision');
+           var klasa=paragrafi.getAttribute('class').split(" ");           
+           if(klasa[2]=="none")
+           {
+               paragrafi.setAttribute("class",klasa[0]+" "+klasa[1]+" block");
+              btn0.innerText="Hide"
+            }
+           else{ paragrafi.setAttribute("class",klasa[0]+" "+klasa[1]+" none");
+           btn0.innerText="READ MORE >>";
+            }
+           }
+
+           if(e.getAttribute("id")=="readbtn1")
           {
             var paragrafi=document.getElementById('pithoragarh');
            var klasa=paragrafi.getAttribute('class').split(" ");           
@@ -524,8 +554,6 @@
           }
         
           
-
-
       }
 </script>
 
