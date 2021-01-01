@@ -173,17 +173,21 @@
           position: absolute;
           top: 0px;
        }
+
     </style>
 </head>
 <body>
     <table id="tabela1">
 
-        <tr>
+        <tr id="row1">
             <td id="tabela1-rreshti1-kolona1"><p><span id="shkronjaT">T</span>AINTLESSNESS
                 </p></td>
             <td id="tabela1-rreshti1-kolona2">
+                <form action="#" autocomplete="off">
                 <input type="button" name="button-search" value="SEARCH" id="button-search">
                 <input type="search" name="search-box" placeholder="Search Our Website..." id="search-box">
+                </form>
+                <ul id="list" class="list-group"></ul>
             </td>
         </tr>
         <tr><td>
@@ -556,6 +560,6 @@
           
       }
 </script>
-
+    <script type="text/javascript" src="SearchBoxValdiation.js"></script>
 </body>
 </html>
