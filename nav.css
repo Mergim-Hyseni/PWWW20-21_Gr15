@@ -17,6 +17,7 @@ body{
 }
 #tabela1-rreshti1-kolona2{
     float: right;
+    margin-right: 5px;
     padding-right: 0;
 }
 #search-box,#button-search{

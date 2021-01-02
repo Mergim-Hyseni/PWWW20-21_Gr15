@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taintlessness</title>
       <link type="text/css" rel="stylesheet" href="nav.css">
+      <link type="text/css" rel="stylesheet" href="SearchStyle.css">
     <style>
      
         #pershkrimi, #quote {
@@ -173,6 +174,11 @@
           position: absolute;
           top: 0px;
        }
+       #row1{
+           margin-top: 0;
+           padding-top: 0;
+           height: 50px;
+       }
 
     </style>
 </head>
@@ -183,11 +189,18 @@
             <td id="tabela1-rreshti1-kolona1"><p><span id="shkronjaT">T</span>AINTLESSNESS
                 </p></td>
             <td id="tabela1-rreshti1-kolona2">
-                <form action="#" autocomplete="off">
-                <input type="button" name="button-search" value="SEARCH" id="button-search">
+                <div class="wrapper">
+                    <div class="search-input">
                 <input type="search" name="search-box" placeholder="Search Our Website..." id="search-box">
-                </form>
-                <ul id="list" class="list-group"></ul>
+                        <div class="autocom-box">
+                            <li>Hello</li>
+                            <li>TO </li>
+                            <li>Alll</li>
+                        </div>
+                </div>
+                </div>
+                <div class="icon"> <input type="button" name="button-search" value="SEARCH" id="button-search"></div>
+
             </td>
         </tr>
         <tr><td>
@@ -560,6 +573,6 @@
           
       }
 </script>
-    <script type="text/javascript" src="SearchBoxValdiation.js"></script>
+
 </body>
 </html>
