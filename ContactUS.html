@@ -130,7 +130,13 @@
             color: #947D6A;
             font-size: 20px;
         }
-
+      #title{
+          margin-top: 5px;
+          margin-left: 20px;
+      }
+      svg{
+          margin-left: 45%;
+      }
 
     </style>
 
@@ -154,7 +160,12 @@
 <main>
     <div id="box">
         <div id="firstElement">
-            <div><p id="title">I want to consult with an expert</p>
+        <div> <svg height="25" width="50">
+            <polyline points="0,0 50,0 50,25 0,25 0,0 25,12.5 50,0 "
+                      style="fill:none;stroke:rgb(229, 89, 61);stroke-width:3" />
+            Sorry, your browser does not support inline SVG.
+        </svg>
+            <p id="title">I want to consult with an expert</p>
                 <p id="first-paragraph">What do you need? - Please specify as many details as possible in</p>
                 <p id="second-paragraph"> order to carry out a feasibility study of the project.</p></div>
             <form id="questionForm" method="get" action="http://wwww.randyconnolly.com/tests/process.php">
