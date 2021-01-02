@@ -96,5 +96,118 @@
         </fieldset>
     </form>
 </div>
+<script>
+    let form_name = document.getElementById('Name');
+    let email = document.getElementById('email');
+    let form_surname = document.getElementById('Surname');
+    let password=document.getElementById('password');
+    let birthDate=document.getElementById('BirthDate');
+
+    form_name.setAttribute("required", "");
+    form_name.addEventListener('input',()=>{
+        form_name.setCustomValidity('');
+        if(form_name.value.length<4){
+            form_name.setCustomValidity("Name should contain more than 4 characters");
+        }
+        if(form_name.value.charAt(0)!==form_name.value.charAt(0).toUpperCase()){
+            form_name.setCustomValidity("Name should begin with Uppercase letter");
+        }
+
+        form_name.checkValidity();
+    });
+    form_name.addEventListener('invalid',()=>{
+        if(form_name.value===''){
+            form_name.setCustomValidity('Enter your name!');
+        }
+        else {
+            if (form_name.value.length < 4) {
+                form_name.setCustomValidity("Name should contain more than 4 characters");
+            } else {
+                form_name.setCustomValidity("Name should begin with Uppercase letter")
+            }
+        }
+
+    });
+
+    form_surname.setAttribute("required", "");
+    form_surname.addEventListener('input',()=>{
+        form_surname.setCustomValidity('');
+        if(form_surname.value.length<4){
+            form_surname.setCustomValidity("Name should contain more than 4 characters");
+        }
+        if(form_surname.value.charAt(0)!==form_surname.value.charAt(0).toUpperCase()){
+            form_surname.setCustomValidity("Name should begin with Uppercase letter");
+        }
+
+        form_surname.checkValidity();
+    });
+    form_surname.addEventListener('invalid',()=>{
+        if(form_surname.value===''){
+            form_surname.setCustomValidity('Enter your name!');
+        }
+        else {
+            if (form_surname.value.length < 4) {
+                form_surname.setCustomValidity("Name should contain more than 4 characters");
+            } else {
+                form_surname.setCustomValidity("Name should begin with Uppercase letter")
+            }
+        }
+
+    });
+    email.setAttribute("required", "")
+    email.addEventListener('input', () => {
+
+        email.setCustomValidity('');
+        if(email.value.includes(".")===false) {
+            email.setCustomValidity("Email should be valid.It should contain {.}");
+        }
+        if(email.value.includes("_")===false){
+            email.setCustomValidity("Email should be valid.It should contain {_}");
+        }
+        if(email.value.includes("@")===false){
+            email.setCustomValidity("Email should be valid.It should contain {@}");
+        }
+        email.checkValidity();
+    });
+    email.addEventListener('invalid', () => {
+        if (email.value === '') {
+            email.setCustomValidity('Enter email');
+        }else {
+            if (email.value.includes(".") === false) {
+                email.setCustomValidity("Email should be valid.It should contain {.}");
+
+                if (email.value.includes("_") === false) {
+                    email.setCustomValidity("Email should be valid.It should contain {_}");
+                }
+
+                if (email.value.includes("@") === false) {
+                    email.setCustomValidity("Email should be valid.It should contain {@}");
+                }
+            }
+
+        }
+    });
+    password.setAttribute("required","");
+    password.addEventListener('input',()=>{
+        password.setCustomValidity('');
+        if(password.value.length<=7){
+            password.setCustomValidity("Password should contain at least 8 characters");
+        }
+        password.checkValidity();
+    });
+    password.addEventListener('invalid',()=>{
+        if(password.value.length<=7){
+            password.setCustomValidity("Password should contain at least 8 characters");
+        }
+    });
+     birthDate.setAttribute("required","");
+     birthDate.addEventListener('input',()=>{
+         birthDate.setCustomValidity('');
+         birthDate.checkValidity();
+     })
+    birthDate.addEventListener('invalid',()=>{
+        birthDate.setCustomValidity("Please fill Birth Date box");
+    })
+</script>
 </body>
 </html>

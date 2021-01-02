@@ -85,5 +85,57 @@
 <p id="additional-information">If you are not registred yet you can create new account here.
     <a href="CreateAccount.html" id="link">Create Account</a>
 </p>
+<script type="text/javascript">
+    let email=document.getElementById('email');
+    let password=document.getElementById('password');
+
+    email.setAttribute("required", "")
+    email.addEventListener('input', () => {
+
+        email.setCustomValidity('');
+        if(email.value.includes(".")===false) {
+            email.setCustomValidity("Email should be valid.It should contain {.}");
+        }
+        if(email.value.includes("_")===false){
+            email.setCustomValidity("Email should be valid.It should contain {_}");
+        }
+        if(email.value.includes("@")===false){
+            email.setCustomValidity("Email should be valid.It should contain {@}");
+        }
+        email.checkValidity();
+    });
+    email.addEventListener('invalid', () => {
+        if (email.value === '') {
+            email.setCustomValidity('Enter email');
+        }else {
+            if (email.value.includes(".") === false) {
+                email.setCustomValidity("Email should be valid.It should contain {.}");
+
+                if (email.value.includes("_") === false) {
+                    email.setCustomValidity("Email should be valid.It should contain {_}");
+                }
+
+                if (email.value.includes("@") === false) {
+                    email.setCustomValidity("Email should be valid.It should contain {@}");
+                }
+            }
+
+        }
+    });
+    password.setAttribute("required","");
+    password.addEventListener('input',()=>{
+        password.setCustomValidity('');
+        if(password.value.length<=7){
+            password.setCustomValidity("Password should contain at least 8 characters");
+        }
+        password.checkValidity();
+    });
+    password.addEventListener('invalid',()=>{
+        if(password.value.length<=7){
+            password.setCustomValidity("Password should contain at least 8 characters");
+        }
+    });
+
+</script>
 </body>
 </html>
