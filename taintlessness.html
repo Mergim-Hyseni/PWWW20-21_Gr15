@@ -441,11 +441,13 @@
                 <p class="ngjyra1 fonti1">
                     Newsletter
                 </p>
-                <input  class="email" type="email" name="email" placeholder="Enter Your Email Here">
+                <form action="http://wwww.randyconnolly.com/tests/process.php">
+                <input  class="email" type="email" name="email" placeholder="Enter Your Email Here" id="email">
                 <br>
                 <br>
                 <input  class="submit-butoni" type="submit" name="Submit" value="SIGN UP">
                 <br>
+                </form>
             </td>
         </tr><tr><td colspan="4"><hr class="h-Tagu"></td></tr>
     </table>
@@ -553,9 +555,40 @@
             }
 
         }
-
-
     }
+    email.setAttribute("required", "")
+    email.addEventListener('input', () => {
+
+        email.setCustomValidity('');
+        if(email.value.includes(".")===false) {
+            email.setCustomValidity("Email should be valid.It should contain {.}");
+        }
+        if(email.value.includes("_")===false){
+            email.setCustomValidity("Email should be valid.It should contain {_}");
+        }
+        if(email.value.includes("@")===false){
+            email.setCustomValidity("Email should be valid.It should contain {@}");
+        }
+        email.checkValidity();
+    });
+    email.addEventListener('invalid', () => {
+        if (email.value === '') {
+            email.setCustomValidity('Enter email');
+        }else {
+            if (email.value.includes(".") === false) {
+                email.setCustomValidity("Email should be valid.It should contain {.}");
+
+                if (email.value.includes("_") === false) {
+                    email.setCustomValidity("Email should be valid.It should contain {_}");
+                }
+
+                if (email.value.includes("@") === false) {
+                    email.setCustomValidity("Email should be valid.It should contain {@}");
+                }
+            }
+
+        }
+    });
 </script>
 
 </body>

@@ -161,7 +161,7 @@
                 <p class="paragraph-bottom"><label for="name" id="label-name">Name:</label>
                     <label for="email">Email:</label></p>
                 <p class="paragraph"><input type="text" id="name" name="Name" placeholder="Write your name here">
-                    <input type="text" id="email" name="Email" placeholder="Write your email here"></p>
+                    <input type="email" id="email" name="Email" placeholder="Write your email here"></p>
                 <p class="paragraph-bottom"><label for="number" id="label-number">Number:</label>
                     <label for="needs">What do you need?</label></p>
                 <p class="paragraph"><input type="tel" id="number" placeholder="Write your number here">
@@ -206,37 +206,34 @@
     let form_name = document.getElementById('name');
     let email = document.getElementById('email');
     let phone_input = document.getElementById('number');
-    // let butoni=document.getElementById('submit-button');
+    let privacy=document.getElementById('Privacy-Policy');
+    let needs=document.getElementById('needs');
 
     form_name.setAttribute("required", "");
-
-    form_name.addEventListener('input', () => {
-        if (form_name.value === '') {
-            form_name.setCustomValidity(form_name.value !== '');
-        } else {
-            if (form_name.value.length < 4) {
-                form_name.setCustomValidity(form_name.value.length < 4);
-            } else {
-                if (form_name.value.charAt(0) !== form_name.value.charAt(0).toUpperCase()) {
-                    form_name.setCustomValidity(form_name.value.charAt(0) !== form_name.value.charAt(0).toLowerCase());
-                }
-            }
-            form_name.checkValidity();
+    form_name.addEventListener('input',()=>{
+       form_name.setCustomValidity('');
+        if(form_name.value.length<4){
+            form_name.setCustomValidity("Name should contain more than 4 characters");
         }
+        if(form_name.value.charAt(0)!==form_name.value.charAt(0).toUpperCase()){
+            form_name.setCustomValidity("Name should begin with Uppercase letter");
+        }
+
+        form_name.checkValidity();
     });
-
-    form_name.addEventListener('invalid', () => {
-        if (form_name.value === '') {
+    form_name.addEventListener('invalid',()=>{
+        if(form_name.value===''){
             form_name.setCustomValidity('Enter your name!');
-        } else {
-
+        }
+        else {
             if (form_name.value.length < 4) {
                 form_name.setCustomValidity("Name should contain more than 4 characters");
             } else {
                 form_name.setCustomValidity("Name should begin with Uppercase letter")
             }
         }
-    })
+
+    });
 
     phone_input.setAttribute("required", "");
     phone_input.setAttribute("pattern", "[0-9]{3}-[0-9]{3}-[0-9]{4}");
@@ -253,23 +250,64 @@
             phone_input.setCustomValidity('Enter phone number in this format: 123-456-7890');
         }
     });
-    email.setAttribute("required", "")
-    email.addEventListener('input', () => {
-        if (email.value === '') {
-            email.setCustomValidity('');
-        } else {
-            email.setCustomValidity(email.value.contains('.') && email.value.contains('@') && email.value.contains('_'));
 
+
+   email.setAttribute("required", "")
+    email.addEventListener('input', () => {
+
+            email.setCustomValidity('');
+         if(email.value.includes(".")===false) {
+            email.setCustomValidity("Email should be valid.It should contain {.}");
+        }
+        if(email.value.includes("_")===false){
+            email.setCustomValidity("Email should be valid.It should contain {_}");
+        }
+        if(email.value.includes("@")===false){
+            email.setCustomValidity("Email should be valid.It should contain {@}");
         }
         email.checkValidity();
     });
     email.addEventListener('invalid', () => {
         if (email.value === '') {
             email.setCustomValidity('Enter email');
-        } else {
-            email.setCustomValidity('Email should be valid.It should contain {. _ @}');
+        }else {
+            if (email.value.includes(".") === false) {
+                email.setCustomValidity("Email should be valid.It should contain {.}");
+
+                if (email.value.includes("_") === false) {
+                    email.setCustomValidity("Email should be valid.It should contain {_}");
+                }
+
+                if (email.value.includes("@") === false) {
+                    email.setCustomValidity("Email should be valid.It should contain {@}");
+                }
+            }
+
         }
     });
+    privacy.setAttribute("required","");
+    privacy.addEventListener('input',()=>{
+        privacy.setCustomValidity('');
+        privacy.checkValidity();
+    });
+
+    privacy.addEventListener('invalid',()=>{
+       if(privacy.checked===false){
+           privacy.setCustomValidity("If you want to continue please fill this box");
+       }
+    })
+    needs.setAttribute("required","");
+    needs.addEventListener('input',()=>{
+        needs.setCustomValidity('');
+        if(needs.selectedIndex===1){
+            needs.setCustomValidity("Choose one");
+    }needs.checkValidity();
+    });
+    needs.addEventListener('invalid',()=>{
+        if(needs.selectedIndex===1){
+            needs.setCustomValidity("Choose one");
+        }
+    })
 </script>
 </body>
 </html>
