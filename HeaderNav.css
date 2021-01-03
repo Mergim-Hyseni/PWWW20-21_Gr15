@@ -1,7 +1,8 @@
-body {
-    margin-top: 0;
-}
-#headerOfContactUs{
+
+    body{
+       margin-top: 0px;
+    }
+#header{
     position: relative;
     margin-top: 0;
     height: 121px;
@@ -18,6 +19,7 @@ body {
     top: 0;
     left: 8px;
     right: 8px;
+    z-index: 2;
 }
 
 #item1 {
