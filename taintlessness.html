@@ -174,19 +174,89 @@
             position: absolute;
             top: 0px;
         }
+        /* awdkawd */
+        #div1{
+       width: 100%;
+       display: flex;
+	      flex-direction: row;
+	      flex-wrap: nowrap;
+	     justify-content: space-between;
+	     align-items: stretch;
+	     align-content: space-between;
+     
+      }
+      #div2{
+         width: 400px;
+         display: inline;
+         position: relative;
+         display: flex;
+      	flex-direction: row;
+      	flex-wrap: nowrap;
+      	justify-content: flex-end;
+      	align-items: stretch;
+      	align-content: space-between;
+      }
+  #div1 p{
+    margin: 0;
+    color: #96877B;
+    font-size: 30px;
+    font-family: serif;
+}
+
+#div1 .search_input p{
+     font-size: 30px;
+     font-family: serif;
+}
+.autocom-box{
+    position: absolute;
+    right:58px;
+    top: 40px;
+    margin-top: 1px;
+    width: 180px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.autocom-box li{
+    background-color:azure;
+    display: block;
+    color: black;
+    margin-right: 1px;
+    border-style: none;
+    text-align: left;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.aktive{
+    display: block;
+}
+
+.autocom-box li:hover{
+  background: #efefef;
+}
     </style>
 </head>
 <body>
+
+    <div id="div1">
+        <p><span id="shkronjaT">T</span>AINTLESSNESS</p>
+        <a href="#" id='linku' hidden></a>
+         <div id="div2"> 
+         <input type="search" name="search-box" placeholder="Search Our Website..." id="search-box">
+         <input type="button" name="button-search" value="SEARCH" id="button-search">
+
+         <div class="autocom-box none">
+           <!-- here list are inserted from javascript -->
+         </div>
+       
+         </div>
+   
+   </div>
+    <script src="search.js"></script>
 <table id="tabela1">
 
-    <tr>
-        <td id="tabela1-rreshti1-kolona1"><p><span id="shkronjaT">T</span>AINTLESSNESS
-        </p></td>
-        <td id="tabela1-rreshti1-kolona2">
-            <input type="button" name="button-search" value="SEARCH" id="button-search">
-            <input type="search" name="search-box" placeholder="Search Our Website..." id="search-box">
-        </td>
-    </tr>
+
     <tr><td>
         <label class="label3">Find something interesting</label>
 
@@ -372,7 +442,7 @@
         <tr>
             <td></td>
             <td><a  href="project1.html" class="butonat1"  target="_blank">View This Project >></a> </td>
-            <td><a  href="project2,.html" class="butonat1"  target="_blank">View This Project >></a> </td>
+            <td><a  href="project2.html" class="butonat1"  target="_blank">View This Project >></a> </td>
             <td><a  href="project3.html" class="butonat1"  target="_blank">View This Project >></a> </td>
         </tr>
         <tr> <td colspan="4"><hr class="h-Tagu"></td></tr>
