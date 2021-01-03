@@ -59,7 +59,7 @@ canvas {
             border-color: rgb(148, 121, 98);
   }
    .paragrafet{
-         color: rgb(148, 121, 920px);
+         color: rgb(148, 121, 920);
          font-size: 20px;
          font-weight: bold;
          
@@ -137,7 +137,23 @@ function startGame() {
     myGamePiece.gravity = 0.05;
     myScore = new component("30px", "Consolas", "black", 0, 40, "text");
     myGameArea.start();
+
 }
+
+var timeToChangeBackgrount;
+var canvas=document.getElementById('canvas');
+
+
+    function changeBackgroundColor(){
+        var d=new Date();
+        if(d.getSeconds()%20===0){
+        canvas.style.backgroundColor='#010086';}
+        else{if(d.getSeconds()%10===0){
+            canvas.style.backgroundColor='rgb(68, 120, 233)';
+        }}
+    }
+
+
 
 
 
@@ -165,8 +181,10 @@ var myGameArea = {
     },
     clear : function() {
         this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+        timeToChangeBackgrount=setInterval(changeBackgroundColor,1000);
     }
 }
+
 
 function component(width, height, color, x, y, type) {
     this.type = type;
@@ -195,6 +213,7 @@ function component(width, height, color, x, y, type) {
 
 
               }
+
         
     }
     this.newPos = function() {
@@ -252,15 +271,6 @@ function updateGameArea() {
            var koha=document.getElementById('time');
               koha.innerText='Time : '+sessionStorage.time+" seconds";
               document.getElementById('gameOver').innerText='Game Over';
- 
-
-             
-        
-
-
-
-
-
         }
 
             return;
@@ -287,6 +297,7 @@ function updateGameArea() {
     myScore.update();
     myGamePiece.newPos();
     myGamePiece.update();
+
 }
 
 function everyinterval(n) {
