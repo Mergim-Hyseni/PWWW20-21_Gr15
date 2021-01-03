@@ -177,7 +177,7 @@
                     <label for="needs">What do you need?</label></p>
                 <p class="paragraph"><input type="tel" id="number" placeholder="Write your number here">
                     <select name="Needs" id="needs">
-                        <option value="option1" class="needs">Needs</option>
+                        <option value="" class="needs" selected hidden>Needs</option>
                         <option value="About new places">About new places</option>
                         <option value="About payments">About payments</option>
                         <option value="About job">About job</option>
@@ -185,7 +185,7 @@
                 </p>
                 <p><label for="decription">Decription</label></p>
                 <p id="text-above-textarea">How we can help you</p>
-                <textarea rows="10" cols="61" id="decription" required></textarea>
+                <textarea rows="10" cols="61" id="decription" ></textarea>
                 <p id="text-below-textarea">This field is required</p>
                 <p class="checkbox"><input type="checkbox" id="Privacy-Policy" name="Privacy-Policy">I have read and
                     accept the
@@ -219,6 +219,7 @@
     let phone_input = document.getElementById('number');
     let privacy=document.getElementById('Privacy-Policy');
     let needs=document.getElementById('needs');
+    let decription=document.getElementById('decription');
 
     form_name.setAttribute("required", "");
     form_name.addEventListener('input',()=>{
@@ -310,13 +311,25 @@
     needs.setAttribute("required","");
     needs.addEventListener('input',()=>{
         needs.setCustomValidity('');
-        if(needs.selectedIndex===1){
+        if(needs.value()===''){
             needs.setCustomValidity("Choose one");
-    }needs.checkValidity();
+    }
+        needs.checkValidity();
     });
     needs.addEventListener('invalid',()=>{
-        if(needs.selectedIndex===1){
-            needs.setCustomValidity("Choose one");
+            if(needs.selectedIndex===0){
+                needs.setCustomValidity("Choose one option");
+            }
+    })
+
+    decription.setAttribute("required","");
+    decription.addEventListener('input',()=>{
+        decription.setCustomValidity('');
+        decription.checkValidity();
+    });
+    decription.addEventListener('invalid',()=>{
+        if(decription.value===''){
+            decription.setCustomValidity("Please give a decription");
         }
     })
 </script>
