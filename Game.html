@@ -6,6 +6,7 @@
 canvas {
     border:1px solid #d3d3d3;
     background-color: rgb(68, 120, 233);
+
     
         
 }
@@ -84,6 +85,11 @@ canvas {
           <p id='last_record' class="paragrafet"></p>
        <p class="pcenter"> <input id="username" type="text" placeholder="Username" name="username"> </p>
        <p class="pcenter"> <button id="startbtn">Start</button>   </p>
+        <script>
+        var startbtn=document.getElementById('startbtn');
+         startbtn.addEventListener('mouseover',()=>{startbtn.style.backgroundColor='rgb(148, 121, 98)'},false)
+         startbtn.addEventListener('mouseout',()=>{startbtn.style.backgroundColor='rgb(229, 89, 61)'},false)
+        </script>
        </div>
       <canvas id="canvas" width="1000px" height="600px">
       </canvas> 
@@ -147,7 +153,7 @@ var canvas=document.getElementById('canvas');
     function changeBackgroundColor(){
         var d=new Date();
         if(d.getSeconds()%20===0){
-        canvas.style.backgroundColor='#010086';}
+        canvas.style.backgroundColor='rgb(66, 173, 235)';}
         else{if(d.getSeconds()%10===0){
             canvas.style.backgroundColor='rgb(68, 120, 233)';
         }}

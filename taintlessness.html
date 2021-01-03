@@ -6,7 +6,7 @@
     <title>Taintlessness</title>
     <link type="text/css" rel="stylesheet" href="nav.css">
     <style>
-
+       
         #pershkrimi, #quote {
             text-align: center;
             margin-bottom: 15px;
@@ -84,7 +84,7 @@
         }
         .email {
             outline: none;
-            color: white;
+            color: rgb(148, 121, 98);
             width: 100%;
             background-color: rgb(230, 223, 217);
             padding: 10px;
@@ -112,7 +112,14 @@
 
             content: "\00BB";
         }
+        
+        
         .link1{text-decoration: none;color: coral}
+        .link1:hover,.l1:hover{
+         color: rgb(148, 121, 98);
+
+        }
+       
 
         #footer p{
             color: #B3B3B3;
@@ -244,14 +251,9 @@
         <p><span id="shkronjaT">T</span>AINTLESSNESS</p>
         <a href="#" id='linku' hidden></a>
          <div id="div2"> 
-         <input type="search" name="search-box" placeholder="Search Our Website..." id="search-box">
-         <input type="button" name="button-search" value="SEARCH" id="button-search" class="item">
-         <script>
-             var btnsearch=document.getElementById('button-search');
-                 btnsearch.addEventListener('mouseover',()=>{btnsearch.style.backgroundColor='rgb(148, 121, 98)'},false)
-                 btnsearch.addEventListener('mouseout',()=>{btnsearch.style.backgroundColor='rgb(229, 89, 61)'},false)
-
-         </script>
+         <input type="search" name="search-box" autocomplete="of" placeholder="Search Our Website..." id="search-box">
+         <button name="button-search" id="button-search" class="item">SEARCH</button>
+       
          <div class="autocom-box none">
            <!-- here list are inserted from javascript -->
          </div>
@@ -286,7 +288,7 @@
                     </div>
                 </div>
                 <a href="ContactUS.html"class="item5 item">CONTACT US</a>
-                <a href="CreateAccount.html" target="_blank" class="item6 item">CREATE ACCOUNT</a>
+                <a href="BankAccounts.html" target="_blank" class="item6 item">ACCOUNTS</a>
                 <a href="LogIn.html" class="item7 item">LOG IN</a>
             </div>
         </td>
@@ -448,9 +450,9 @@
         </tr>
         <tr>
             <td></td>
-            <td><a  href="project1.html" class="butonat1"  target="_blank">View This Project >></a> </td>
-            <td><a  href="project2.html" class="butonat1"  target="_blank">View This Project >></a> </td>
-            <td><a  href="project3.html" class="butonat1"  target="_blank">View This Project >></a> </td>
+            <td><a  href="project1.html" class="butonat1 item"  target="_blank">View This Project >></a> </td>
+            <td><a  href="project2.html" class="butonat1 item"  target="_blank">View This Project >></a> </td>
+            <td><a  href="project3.html" class="butonat1 item"  target="_blank">View This Project >></a> </td>
         </tr>
         <tr> <td colspan="4"><hr class="h-Tagu"></td></tr>
 
@@ -482,14 +484,14 @@
                 <br>
             </td>
             <td>
-                <p class="ngjyra1 fonti2">Company Name
-                    <br>Street Name & Number
-                    <br>Town
-                    <br>Postcode/Zip
+                <p class="ngjyra1 fonti2">Company Name Taintlessness
+                    <br>Street : Arberia
+                    <br>Town : Prishtina
+                    <br>Postcode/Zip 10000
                     <br>
-                    <br>Tel:xxxxx xxxxxxxxxx
-                    <br>Fax:xxxxx xxxxxxxxxx
-                    <br>Email:contact@mydomain.com</p>
+                    <br>Tel:044 444555
+                    <br>Fax:045 555666
+                    <br>Email:taintlessness@gmail.com</p>
             </td>
 
             <td>
@@ -497,12 +499,12 @@
                     <b>Blog Post Title</b>
                     <br></p>
                 <p class="ngjyra1 fonti2">
-                    <small>Posted by Admin on 00.00.0000</small>
+                    <small>Posted by Admin on 20.11.2020</small>
                     <br>
-                    Vestibulumaccumsan egestibulum <br>
-                    eu justo convallis augue estas <br>
-                    aenen elit intesque sed facilispede <br>
-                    estibulum.</p>
+                    There's no better place <br> 
+                    to find yourself than <br>
+                    sitting by a waterfall.
+                    </p>
                 <br>
                 <br>
             </td>
@@ -521,7 +523,7 @@
                 <input  class="email" type="email" name="email" placeholder="Enter Your Email Here" id="email">
                 <br>
                 <br>
-                <input  class="submit-butoni" type="submit" name="Submit" value="SIGN UP">
+                <input class="submit-butoni" type="submit" name="Submit" value="SIGN UP">
                 <br>
                 </form>
             </td>
@@ -665,7 +667,19 @@
 
         }
     });
-</script>
 
+    var btnsearch=document.getElementsByTagName('BUTTON');
+       Array.from(btnsearch).forEach(element => {
+                element.addEventListener('mouseover',()=>{element.style.backgroundColor='rgb(148, 121, 98)'},false)
+                element.addEventListener('mouseout',()=>{element.style.backgroundColor='rgb(229, 89, 61)'},false)
+                 
+       });
+    var signupbtn=document.getElementsByClassName('submit-butoni')[0];
+    signupbtn.addEventListener('mouseover',()=>{signupbtn.style.backgroundColor='rgb(148, 121, 98)'},false)
+    signupbtn.addEventListener('mouseout',()=>{signupbtn.style.backgroundColor='rgb(229, 89, 61)'},false)
+           
+        
+        
+</script>
 </body>
 </html>
