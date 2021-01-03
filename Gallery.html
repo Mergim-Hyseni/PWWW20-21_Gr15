@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
-    <link rel = "stylesheet"type = "text/css" href = "nav.css" />
+    <script type="text/javascript" src="HeaderJS.js"></script>
+    <link rel = "stylesheet"type = "text/css" href = "HeaderNav.css" />
     <style>
     
         .gallery {
@@ -36,12 +37,6 @@
       .clear{
         clear: both;
       }
-      .item1{
-       background-color:  rgb(229, 89, 61);
-      }
-      .item5{
-        background-color: rgb(148, 121, 98);
-      }
 
       .grid-container {
   display: grid;
@@ -49,49 +44,29 @@
   grid-gap:35px;
   
 }
+      .link2{
+       background-color: #947D6A;
+      }
     
 
     </style>
 </head>
 <body>
-  <table id="tabela1">
-
-    <tr>
-        <td id="tabela1-rreshti1-kolona1"><p><span id="shkronjaT">T</span>AINTLESSNESS
-            </p></td>
-        <td id="tabela1-rreshti1-kolona2">
-          <input type="button" name="button-search" value="SEARCH" id="button-search">
-            <input type="search" name="search-box" placeholder="Search Our Website..." id="search-box">
-        </td>
-    </tr>
-    <tr><td>
-<label class="label3">Find something interesting</label>
-
-    </td></tr>
-    <tr class="navigation-bar" >
-        <td id="navigation-bar" colspan="2">
-            <div class="flex-container">
-           <a href="taintlessness.html" class="item1">HOMEPAGE</a>
-            <a href ="#" class="item2">STYLE DEMO</a>
-            <a href="#" class="item3">FULL WIDTH</a>
-             <div class="dropdown">
-                 <button class="dropbtn">DROPDOWN</button>
-                 <div class="dropdown-content">
-                   <a href="AboutUs.html">ABOUT US</a>
-                   <a href="ContactUS.html">CONTACT US</a>
-                   <a href="LogIn.html">LOG IN</a>
-                   <a href="CreateAccount.html">CREATE ACCOUNT</a>
-
-
-                 </div>
-             </div>
-            <a href="Gallery.html" target="_blank" class="item5">GALLERY</a>
-            <a href="ContactUS.html"class="item6">CONTACT US</a>
-            <a href="LogIn.html" class="item7">LOG IN</a>
-            </div>
-        </td>
-    </tr>
-</table>
+<header id="headerOfContactUs">
+    <div id="FlexBox">
+        <div id="item1"><p><span id="shkronjaT">T</span>AITLESSNESS</p>
+            <label class="label3">Find something interesting</label></div>
+        <div id="item2"></div>
+        <div id="item3">
+            <a href="taintlessness.html" class="link1 link">HOMEPAGE</a>
+            <a href="Gallery.html" class="link2 link">GALLERY</a>
+            <a href="AboutUs.html" class="link3 link">ABOUT US</a>
+            <a href="ContactUS.html" class="link4 link" >CONTACT US</a>
+            <a href="BankAccounts.html" class="link5 link">ACCOUNTS</a>
+            <a href="LogIn.html" class="link6 link">LOG IN</a>
+        </div>
+    </div>
+</header>
 <br>
 <br>
  <div class="grid-container">
