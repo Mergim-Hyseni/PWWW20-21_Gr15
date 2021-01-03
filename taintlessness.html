@@ -235,7 +235,8 @@
 .autocom-box li:hover{
   background: #efefef;
 }
-    </style>
+
+</style>
 </head>
 <body>
 
@@ -244,8 +245,13 @@
         <a href="#" id='linku' hidden></a>
          <div id="div2"> 
          <input type="search" name="search-box" placeholder="Search Our Website..." id="search-box">
-         <input type="button" name="button-search" value="SEARCH" id="button-search">
+         <input type="button" name="button-search" value="SEARCH" id="button-search" class="item">
+         <script>
+             var btnsearch=document.getElementById('button-search');
+                 btnsearch.addEventListener('mouseover',()=>{btnsearch.style.backgroundColor='rgb(148, 121, 98)'},false)
+                 btnsearch.addEventListener('mouseout',()=>{btnsearch.style.backgroundColor='rgb(229, 89, 61)'},false)
 
+         </script>
          <div class="autocom-box none">
            <!-- here list are inserted from javascript -->
          </div>
@@ -264,23 +270,24 @@
     <tr class="navigation-bar" >
         <td id="navigation-bar" colspan="2">
             <div class="flex-container">
-                <a href="taintlessness.html" class="item1">HOMEPAGE</a>
-                <a href ="#" class="item2">STYLE DEMO</a>
-                <a href="#" class="item3">FULL WIDTH</a>
+                <a href="taintlessness.html" class="item1 item">HOMEPAGE</a>
+                <a href ="Gallery.html" class="item2 item">GALLERY</a>
+                <a href="AboutUs.html" class="item3 item">ABOUT US</a>
                 <div class="dropdown">
                     <button class="dropbtn">DROPDOWN</button>
                     <div class="dropdown-content">
-                        <a href="AboutUs.html">ABOUT US</a>
+                        <a href="Game.html">GAME</a>
                         <a href="ContactUS.html">CONTACT US</a>
+                         <a href="BankAccounts.html">BANK ACCOUNT</a>
                         <a href="LogIn.html">LOG IN</a>
                         <a href="CreateAccount.html">CREATE ACCOUNT</a>
 
 
                     </div>
                 </div>
-                <a href="Gallery.html" target="_blank" class="item5">GALLERY</a>
-                <a href="ContactUS.html"class="item6">CONTACT US</a>
-                <a href="LogIn.html" class="item7">LOG IN</a>
+                <a href="ContactUS.html"class="item5 item">CONTACT US</a>
+                <a href="CreateAccount.html" target="_blank" class="item6 item">CREATE ACCOUNT</a>
+                <a href="LogIn.html" class="item7 item">LOG IN</a>
             </div>
         </td>
     </tr>
@@ -462,13 +469,13 @@
 
             <td>
                 <ul class="list1">
-                    <li class="l1"><a class="link1" href="#">Homepage</a></li>
+                    <li class="l1"><a class="link1" href="taintlessness.html">Homepage</a></li>
                     <li class="l1"><a class="link1" href="ContactUS.html">Contact Us</a></li>
                     <li class="l1"><a class="link1" href="BankAccounts.html">Bank Accounts</a></li>
                     <li class="l1"><a class="link1" href="PrivacyPolicy.html">Privacy Policy</a></li>
-                    <li class="l1"><a class="link1" href="#">Terms of Use</a></li>
-                    <li class="l1"><a class="link1" href="#">Copyright Information</a></li>
-                    <li class="l1"><a class="link1" href="#"> Website Matters</a></li>
+                    <li class="l1"><a class="link1" href="Game.html">Flappy Bird</a></li>
+                    <li class="l1"><a class="link1" href="AboutUs.html">About Us</a></li>
+                    <li class="l1"><a class="link1" href="LogIn.html">Login</a></li>
                 </ul>
                 <br>
                 <br>
@@ -500,12 +507,11 @@
                 <br>
             </td>
             <td>
-                <img src="images/photo1.png" class="mr" style="margin-left:0;" alt="foto e linkedin" title="linkedin" width="50px" height="50px">
-                <img src="images/photo2.png"class="mr" alt="foto e twiter-it" title="twiter" width="50px" height="50px">
-                <img src="images/photo3.png"class="mr" alt="" title="" width="50px" height="50px">
-                <img src="images/photo4.png"class="mr" alt="foto e google plus" title="google+" width="50px" height="50px">
-                <img src="images/photo5.png"class="mr" alt="" title="" width="50px" height="50px">
-
+                <img src="images/photo1.png" class="mr" style="margin-left:0;" alt="foto e linkedin" title="linkedin" width="40px" height="40px">
+                <img src="images/photo2.png"class="mr" alt="foto e twiter-it" title="twiter" width="40px" height="40px">
+                <img src="images/photo3.png"class="mr" alt="" title="" width="40px" height="40px">
+                <img src="images/photo4.png"class="mr" alt="foto e google plus" title="google+" width="40px" height="40px">
+                <img src="images/photo5.png"class="mr" alt="" title="" width="40px" height="40px">
                 <br>
 
                 <p class="ngjyra1 fonti1">

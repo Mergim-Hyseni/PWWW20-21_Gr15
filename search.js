@@ -26,14 +26,12 @@ if(userData){
         }
         linkTag.setAttribute("href", webLink);
         linkTag.setAttribute("target","_blank");
-        console.log(webLink);
         linkTag.click();
     }
     emptyArray = suggestions.filter((data)=>{
         //filtering array value and user characters to lowercase and return only those words which are start with user enetered chars
         return data.toLocaleLowerCase().startsWith(userData.toLocaleLowerCase()); 
     });
-    console.log(emptyArray);
     emptyArray = emptyArray.map((data)=>{
         // passing return data inside li tag
         return data = '<li>'+ data +'</li>';
@@ -41,7 +39,6 @@ if(userData){
     autocom_box.setAttribute('class','autocom-box aktive');
     showSuggestions(emptyArray);
     let allList =document.getElementsByTagName('li');
-    console.log(allList);
     for (let i = 0; i < allList.length; i++) {
         //adding onclick attribute in all li tag
         allList[i].setAttribute("onclick", "select(this)");
@@ -53,7 +50,6 @@ if(userData){
 
 function select(element){
 let selectData = element.textContent;
-console.log(selectData);
 search_box.value = selectData;
 button_search.onclick = ()=>{
     if(selectData==='Antelope Canyon')
@@ -70,7 +66,6 @@ button_search.onclick = ()=>{
         }
         linkTag.setAttribute("href", webLink);
         linkTag.setAttribute("target","_blank");     
-        console.log(webLink);
         linkTag.click();
 }
 autocom_box.setAttribute('class','autocom-box none');
